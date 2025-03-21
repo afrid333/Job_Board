@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Job Board</h1>
+        <nav>
+            <ul>
+                <li><a href="#jobs">Job Listings</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#post-job">Post a Job</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="jobs">
+        <h2>Available Jobs</h2>
+        <input type="text" id="search" placeholder="Search jobs...">
+        <select id="filter">
+            <option value="all">All Categories</option>
+            <option value="it">IT</option>
+            <option value="marketing">Marketing</option>
+            <option value="finance">Finance</option>
+        </select>
+        <div id="job-listings"></div>
+    </section>
+    
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+    <section id="register">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <select>
+                <option value="job-seeker">Job Seeker</option>
+                <option value="employer">Employer</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+    <section id="post-job">
+        <h2>Post a Job</h2>
+        <form id="post-job-form">
+            <input type="text" placeholder="Job Title" required>
+            <input type="text" placeholder="Company Name" required>
+            <input type="text" placeholder="Location" required>
+            <textarea placeholder="Job Description" required></textarea>
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Job Board. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
